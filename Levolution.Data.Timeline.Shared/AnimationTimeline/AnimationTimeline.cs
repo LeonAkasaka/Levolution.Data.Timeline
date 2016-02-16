@@ -9,11 +9,19 @@ namespace Levolution.Data.Timeline
     /// </summary>
     public abstract class AnimationTimeline<TValue> : Timeline
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public virtual TValue Value { get; protected set; }
         
-        public AnimationClock Clock { get; protected set; }
-
-
+        /// <summary>
+        /// 
+        /// </summary>
+        public IAnimationClock Clock { get; protected set; }
+        
+        /// <summary>
+        /// 
+        /// </summary>
         protected override void Update()
         {
             base.Update();

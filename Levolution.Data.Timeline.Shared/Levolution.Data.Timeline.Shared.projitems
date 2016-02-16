@@ -9,11 +9,14 @@
     <Import_RootNamespace>Levolution.Data.Timeline</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)AnimationTimeline.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AnimationClock\AnimationClock.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AnimationClock\FrameSyncClock.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AnimationClock\IAnimationClock.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AnimationClock\ImmediateClock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AnimationTimeline\AnimationTimeline.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AnimationTimeline\DoubleTimeline.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AnimationTimeline\SingleTimeline.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AnimationTimeline\IntegerTimeline.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Duration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Timeline.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TimelineGroup.cs" />
