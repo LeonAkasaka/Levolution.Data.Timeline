@@ -1,16 +1,21 @@
-﻿using System;
+﻿using Levolution.Core.Component;
+using System;
 
 namespace Levolution.Data.Timeline
 {
     /// <summary>
     /// 
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public struct AnimationClock
+    public interface IAnimationClock : IUpdatable
     {
         /// <summary>
         /// 
         /// </summary>
         TimeSpan CurrentTime { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        void Reset();
     }
 }
