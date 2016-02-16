@@ -6,7 +6,7 @@
     <SharedGUID>c7b787c1-a50a-46f7-8c81-e66a5e18807a</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Levolution.Data.Timeline.Shared</Import_RootNamespace>
+    <Import_RootNamespace>Levolution.Data.Timeline</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AnimationTimeline.cs" />
