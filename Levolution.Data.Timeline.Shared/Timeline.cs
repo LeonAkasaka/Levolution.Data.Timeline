@@ -8,22 +8,27 @@ namespace Levolution.Data.Timeline
     /// <summary>
     /// 
     /// </summary>
-    public abstract class Timeline : ITimeline, INotifyPropertyChanged
+    public abstract class Timeline : ITimeline
     {
         /// <summary>
         /// 
         /// </summary>
-        public double Progress { get; set; }
+        public double Progress
+        {
+            get { return _progress; }
+            set { ProgressChanged?.Invoke(this, EventArgs.Empty); }
+        }
+        private double _progress;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public event EventHandler ProgressChanged;
 
         /// <summary>
         /// 
         /// </summary>
         public Duration Duration { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
 
         /// <summary>
         /// 
@@ -39,13 +44,5 @@ namespace Levolution.Data.Timeline
         /// 
         /// </summary>
         protected virtual void Stop() { }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        protected virtual void Update()
-        {
-
-        }
     }
 }

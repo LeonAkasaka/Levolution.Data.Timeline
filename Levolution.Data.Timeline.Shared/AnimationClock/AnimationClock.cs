@@ -16,6 +16,11 @@ namespace Levolution.Data.Timeline
         /// <summary>
         /// 
         /// </summary>
+        public event EventHandler CurrentTimeUpdated;
+
+        /// <summary>
+        /// 
+        /// </summary>
         protected DateTime BeginTime { get; set; }
 
         /// <summary>
@@ -31,6 +36,6 @@ namespace Levolution.Data.Timeline
         /// <summary>
         ///
         /// </summary>
-        public abstract void Update();
+        public virtual void Update() { CurrentTimeUpdated?.Invoke(this, EventArgs.Empty);  }
     }
 }

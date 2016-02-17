@@ -21,6 +21,8 @@ namespace Levolution.Data.Timeline
         public override void Update()
         {
             _currentTime = DateTime.Now - BeginTime;
+
+            base.Update();
         }
     }
 }

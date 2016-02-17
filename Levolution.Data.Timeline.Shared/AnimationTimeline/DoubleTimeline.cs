@@ -4,7 +4,14 @@ using System.Text;
 
 namespace Levolution.Data.Timeline
 {
-    public class DoubleTimeline : AnimationTimeline<float>
+    /// <summary>
+    /// 
+    /// </summary>
+    public class DoubleTimeline : AnimationTimeline<double>
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        public override double Value => From + (To - From) * Progress;
     }
 }

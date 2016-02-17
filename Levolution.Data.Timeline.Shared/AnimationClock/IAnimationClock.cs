@@ -16,6 +16,11 @@ namespace Levolution.Data.Timeline
         /// <summary>
         /// 
         /// </summary>
+        event EventHandler CurrentTimeUpdated;
+
+        /// <summary>
+        /// 
+        /// </summary>
         void Reset();
     }
 }

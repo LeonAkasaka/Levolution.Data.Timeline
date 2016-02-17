@@ -12,20 +12,37 @@ namespace Levolution.Data.Timeline
         /// <summary>
         /// 
         /// </summary>
-        public virtual TValue Value { get; protected set; }
-        
-        /// <summary>
-        /// 
-        /// </summary>
-        public IAnimationClock Clock { get; protected set; }
-        
-        /// <summary>
-        /// 
-        /// </summary>
-        protected override void Update()
-        {
-            base.Update();
+        public abstract TValue Value { get; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        public TValue From { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public TValue To { get; set; }
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        public IAnimationClock Clock
+        {
+            get { return _clock; }
+            protected set
+            {
+                if (_clock != null) _clock.CurrentTimeUpdated -= Clock_CurrentTimeUpdated;
+                _clock = value;
+                if (_clock != null) _clock.CurrentTimeUpdated += Clock_CurrentTimeUpdated;
+            }
         }
+        private IAnimationClock _clock;
+
+        private void Clock_CurrentTimeUpdated(object sender, EventArgs e)
+        {
+            Progress = Clock.CurrentTime.Ticks / Duration.Value.Ticks;
+        }
+
     }
 }
