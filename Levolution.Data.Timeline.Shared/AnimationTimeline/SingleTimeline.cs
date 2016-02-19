@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Levolution.Data.Timeline
+﻿namespace Levolution.Data.Timeline
 {
     /// <summary>
     /// 
