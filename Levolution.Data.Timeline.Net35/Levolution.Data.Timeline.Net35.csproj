@@ -36,7 +36,15 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Levolution.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Levolution.Data.0.0.1.1\lib\net20\Levolution.Data.dll</HintPath>
+      <HintPath>..\packages\Levolution.Data.0.0.1.4\lib\net20\Levolution.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MinimumAsyncBridge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Levolution.Data.0.0.1.4\lib\net20\MinimumAsyncBridge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MinimumThreadingBridge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Levolution.Data.0.0.1.4\lib\net20\MinimumThreadingBridge.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

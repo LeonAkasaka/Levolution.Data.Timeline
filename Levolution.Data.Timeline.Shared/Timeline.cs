@@ -30,6 +30,21 @@ namespace Levolution.Data.Timeline
         /// <summary>
         /// 
         /// </summary>
+        public TimelineState CurrentState
+        {
+            get { return _currentState; }
+            set { _currentState = value; CurrentStateChanged?.Invoke(this, EventArgs.Empty); }
+        }
+        private TimelineState _currentState;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public event EventHandler CurrentStateChanged;
+
+        /// <summary>
+        /// 
+        /// </summary>
         protected virtual void Play() { }
 
         /// <summary>
