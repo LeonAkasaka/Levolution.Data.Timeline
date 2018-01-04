@@ -3,33 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Levolution.Data.Timeline.Pcl", "Levolution.Data.Timeline.Pcl\Levolution.Data.Timeline.Pcl.csproj", "{E8C56DA7-9108-4660-A8AA-4C3D725449B3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Levolution.Data.Timeline.Net35", "Levolution.Data.Timeline.Net35\Levolution.Data.Timeline.Net35.csproj", "{EAC35D79-6547-4310-A90D-421FE2482951}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Levolution.Data.Timeline.Shared", "Levolution.Data.Timeline.Shared\Levolution.Data.Timeline.Shared.shproj", "{C7B787C1-A50A-46F7-8C81-E66A5E18807A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Levolution.Data.Timeline", "Levolution.Data.Timeline\Levolution.Data.Timeline.csproj", "{E766CAC9-38BD-4492-B9B8-35D9AC45719A}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		Levolution.Data.Timeline.Shared\Levolution.Data.Timeline.Shared.projitems*{c7b787c1-a50a-46f7-8c81-e66a5e18807a}*SharedItemsImports = 13
-		Levolution.Data.Timeline.Shared\Levolution.Data.Timeline.Shared.projitems*{e8c56da7-9108-4660-a8aa-4c3d725449b3}*SharedItemsImports = 4
-		Levolution.Data.Timeline.Shared\Levolution.Data.Timeline.Shared.projitems*{eac35d79-6547-4310-a90d-421fe2482951}*SharedItemsImports = 4
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E8C56DA7-9108-4660-A8AA-4C3D725449B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8C56DA7-9108-4660-A8AA-4C3D725449B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8C56DA7-9108-4660-A8AA-4C3D725449B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8C56DA7-9108-4660-A8AA-4C3D725449B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EAC35D79-6547-4310-A90D-421FE2482951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EAC35D79-6547-4310-A90D-421FE2482951}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EAC35D79-6547-4310-A90D-421FE2482951}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EAC35D79-6547-4310-A90D-421FE2482951}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E766CAC9-38BD-4492-B9B8-35D9AC45719A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E766CAC9-38BD-4492-B9B8-35D9AC45719A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E766CAC9-38BD-4492-B9B8-35D9AC45719A}.Release|Any CPU.ActiveCfg = Release|Any CPU
