@@ -13,7 +13,7 @@ namespace Levolution.Data.Timeline
         public double Progress
         {
             get { return _progress; }
-            set { ProgressChanged?.Invoke(this, EventArgs.Empty); }
+            set { _progress = value; ProgressChanged?.Invoke(this, EventArgs.Empty); }
         }
         private double _progress;
 
@@ -45,16 +45,16 @@ namespace Levolution.Data.Timeline
         /// <summary>
         /// 
         /// </summary>
-        protected virtual void Play() { }
+        public virtual void Play() => CurrentState = TimelineState.Playing;
 
         /// <summary>
         /// 
         /// </summary>
-        protected virtual void Pause() { }
+        public virtual void Pause() => CurrentState = TimelineState.Paused;
 
         /// <summary>
         /// 
         /// </summary>
-        protected virtual void Stop() { }
+        public virtual void Stop() => CurrentState = TimelineState.Stopped;
     }
 }

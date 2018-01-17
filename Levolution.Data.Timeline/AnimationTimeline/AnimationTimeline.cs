@@ -28,7 +28,7 @@ namespace Levolution.Data.Timeline
         public IAnimationClock Clock
         {
             get { return _clock; }
-            protected set
+            set
             {
                 if (_clock != null) _clock.CurrentTimeUpdated -= Clock_CurrentTimeUpdated;
                 _clock = value;
@@ -39,7 +39,16 @@ namespace Levolution.Data.Timeline
 
         private void Clock_CurrentTimeUpdated(object sender, EventArgs e)
         {
-            Progress = Clock.CurrentTime.Ticks / Duration.Value.Ticks;
+            var p = Clock.CurrentTime.Ticks / (double)Duration.Value.Ticks;
+            if (Progress > 1)
+            {
+                Progress = 1;
+                Stop();
+            }
+            else
+            {
+                Progress = p;
+            }
         }
 
     }
